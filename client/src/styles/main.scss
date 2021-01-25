@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
 
+@import './custom';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-@import './custom';
 @import './sizing-class';
 @import './nav';
+
+@import './landing/hero'

@@ -1,17 +1,21 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import _HeroImg from './_HeroImg';
+import _HeroTitle from './_HeroTitle';
 
 function Hero() {
     return (
             <Container fluid className="hw-100v">
-                <Row className="h-100">
-                    <Col md={6} className="bg-primary d-flex justify-content-center align-items-center">
-                        ummm
+                <Row className="h-100 flex-column flex-md-row hero-row">
+                    <Col md={6} className="hero-title-container">
+                        <_HeroTitle />
                     </Col>
                     <Col md={6} className="d-flex justify-content-center align-items-center">
                         <_HeroImg />
                     </Col>
+                    <div className="call-to-action-sm">
+                        <Button variant="outline-primary" size="lg">Find a Doctor</Button>
+                    </div>
                 </Row>
             </Container>
     );
