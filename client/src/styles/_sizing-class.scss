@@ -3,3 +3,23 @@
     min-height: 500px;
     width: 100%;
 }
+
+.h-100v {
+    min-height: 100vh;
+    padding-top: 88px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 60px;
+    }
+}
+
+.p-navbar {
+    padding-top: 88px;
+}
+
+.page-title {
+    font-weight: 600;
+}
+
+.ox-hidden {
+    overflow-x: hidden;  
+}

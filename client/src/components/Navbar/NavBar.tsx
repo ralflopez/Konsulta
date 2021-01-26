@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import logoColored from '../../assets/logo-colored.svg';
 import ToggleIcon from './ToggleIcon';
@@ -20,7 +20,7 @@ function NavBar() {
 
     return (
         <Navbar fixed="top" expand="md" className="navbar-container">
-            <Container className="pb-md-3 pt-md-3">
+            <Container className="pb-2 pt-2 pb-md-3 pt-md-3">
                 <Row className="w-100 mx-auto">
                     <Col xs={6} className="p-md-0">
                         <Navbar.Brand className="d-flex align-items-center">

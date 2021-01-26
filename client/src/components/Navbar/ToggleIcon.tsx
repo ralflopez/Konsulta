@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
-function ToggleIcon({ children }: any) {
+interface Props {
+    children: object
+}
+
+function ToggleIcon({ children }:Props) {
     let [isToggled, setToggled] = useState(false);
 
     return (

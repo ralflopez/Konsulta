@@ -1,0 +1,40 @@
+.fc-img-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    @include media-breakpoint-down(sm) {
+        height: 200px;
+    }
+
+    .fc-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        &.fc-img-f {
+            z-index: 5 ;
+        }
+    }
+}
+
+.fc-container {
+    width: 90%;
+    margin: 40px auto;
+    cursor: pointer;
+
+    p {
+        font-size: 1.3em;
+    }
+
+    &:hover {
+        opacity: 0.7;
+        // .fc-img-f {
+        //     left: 25%;
+        // }
+        // .fc-img-b {
+        //     left: -25%;
+        // }
+    }
+}
