@@ -1,11 +1,3 @@
-.hero-logo {
-    width: 50px;
-    margin-bottom: 25px;
-    @include media-breakpoint-down(sm) {
-        display: none;
-    }
-}
-
 .hero-row {
     flex-wrap: nowrap;
     min-height: 300px;
@@ -14,55 +6,66 @@
         justify-content: space-around;
         align-items: center;
     }
-}
 
-.hero-title-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $primary;
-    @include media-breakpoint-down(sm) {
-        background-color: transparent;
-    }
-}
+    .hero-title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary;
+        @include media-breakpoint-down(sm) {
+            background-color: transparent;
+        }
 
-.hero-title {
-    margin-bottom: 40px;
-    color: $white;
-    @include media-breakpoint-down(sm) {
-        margin-bottom: 0;
-        color: $primary;
+        .hero-logo {
+            width: 50px;
+            margin-bottom: 25px;
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+
+        .hero-title {
+            margin-bottom: 40px;
+            color: $white;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 0;
+                color: $primary;
+            }
+        
+            h1 {
+                font-weight: 900;
+                font-size: 4em;
+                @include media-breakpoint-down(xs) {
+                    font-size: 3em;
+                }
+            }
+            p {
+                font-weight: 300;
+            }
+        }
+
+        .call-to-action {
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
     }
 
-    h1 {
-        font-weight: 900;
-        font-size: 4em;
+    .hero-img {
+        max-height: 400px;
+        min-height: 250px;
+        @include media-breakpoint-down(sm) {
+            max-height: 50vh;
+        }
     }
-    p {
-        font-weight: 300;
-    }
-}
 
-.call-to-action {
-    @include media-breakpoint-down(sm) {
+    .call-to-action-sm {
         display: none;
-    }
-}
-
-.call-to-action-sm {
-    display: none;
-    @include media-breakpoint-down(sm) {
-        flex-grow: 0;
-        display: block;
-        margin-bottom: 16px;
-    }
-}
-
-.hero-img {
-    max-height: 400px;
-    min-height: 250px;
-    @include media-breakpoint-down(sm) {
-        max-height: 50vh;
+        @include media-breakpoint-down(sm) {
+            flex-grow: 0;
+            display: block;
+            margin-bottom: 16px;
+        }
     }
 }

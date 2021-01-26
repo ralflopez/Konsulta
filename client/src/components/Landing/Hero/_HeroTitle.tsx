@@ -5,7 +5,7 @@ import logo from '../../../assets/logo.svg';
 function _HeroTitle() {
     return (
         <>
-            <img src={logo} className="hero-logo"/>
+            <img src={logo} alt="logo" className="hero-logo"/>
             <div className="d-inline-block hero-title text-center">
                 <h1>Konsulta</h1>
                 <p>Seek medical consultation online</p>
