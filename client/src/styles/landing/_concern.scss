@@ -6,6 +6,7 @@
 .concern-title {
     font-weight: 700;
     font-size: 3em;
+    max-width: 80%;
     @include media-breakpoint-down(sm) {
         font-size: 2.5em;
     }

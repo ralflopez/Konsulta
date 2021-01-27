@@ -7,10 +7,10 @@ function Concern() {
     return (
         <Container className="h-100v ">
             <Row className="d-flex justify-content-between ox-hidden p-navbar">
-                <Col xs={12} md={6}>
+                <Col xs={11} md={6} className="mx-auto">
                     <CaptionSide />
                 </Col>
-                <Col xs={12} md={6}>
+                <Col xs={11} md={6} className="mx-auto">
                     <ConcernTxtBox />
                 </Col>
             </Row>

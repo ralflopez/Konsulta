@@ -9,7 +9,7 @@ function App() {
     <Router>
       <NavBar />
       <Switch>
-        <Route path='/' component={LandingScreen} />
+        <Route path="/" exact component={LandingScreen} />
       </Switch>
     </Router>
   );

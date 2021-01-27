@@ -14,6 +14,9 @@
 
 .p-navbar {
     padding-top: 88px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 20px;
+    }
 }
 
 .page-title {
