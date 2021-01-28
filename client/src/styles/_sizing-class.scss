@@ -13,9 +13,9 @@
 }
 
 .p-navbar {
-    padding-top: 88px;
+    padding-top: 76px;
     @include media-breakpoint-down(sm) {
-        padding-top: 20px;
+        padding-top: 76px;
     }
 }
 
@@ -25,4 +25,24 @@
 
 .ox-hidden {
     overflow-x: hidden;  
+}
+
+.br-50 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.fw {
+    &.black {
+        font-weight: 900;
+    }
+    &.bold {
+        font-weight: bold;
+    }
+    &.regular {
+        font-weight: normal;
+    }
+    &.light {
+        font-weight: 300;
+    }
 }

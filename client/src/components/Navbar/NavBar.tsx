@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import logoColored from '../../assets/logo-colored.svg';
@@ -15,6 +15,7 @@ interface HistoryStack {
 function NavBar() {
     let history: HistoryStack = useHistory();
     let { pathname } : Location = useLocation();
+    let [isToggled, setToggled] = useState(false);
 
     React.useEffect(() => console.log(pathname), [pathname]) 
 
@@ -23,11 +24,12 @@ function NavBar() {
             return;
 
         history.push(path);
+        setToggled(!isToggled);
     }
 
     return (
         <Navbar fixed="top" expand="md" className="navbar-container">
-            <Container className="pb-2 pt-2 pb-md-3 pt-md-3">
+            <Container className="pb-2 pt-2 pb-md-2 pt-md-2">
                 <Row className="w-100 mx-auto">
                     <Col xs={6} className="p-md-0">
                         <Navbar.Brand className="d-flex align-items-center" onClick={() => handle_redirect('/')}>
@@ -35,7 +37,7 @@ function NavBar() {
                         </Navbar.Brand>
                     </Col>
                     <Col xs={6} className="p-md-0 text-right">
-                        <ToggleIcon>
+                        <ToggleIcon isToggled={isToggled} setToggled={setToggled}>
                             <Nav className="w-100 d-sm-flex justify-content-around align-items-center">
                                 <Nav.Link 
                                     className={`${pathname === '/' && 'active'}`}

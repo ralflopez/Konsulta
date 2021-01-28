@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface Props {
-    children: object
+    children: object,
+    isToggled: boolean,
+    setToggled: (toggle: boolean) => any
 }
 
-function ToggleIcon({ children }:Props) {
-    let [isToggled, setToggled] = useState(false);
+function ToggleIcon({ children, isToggled, setToggled }:Props) {
 
     return (
         <>
         <div 
         className="toggle-icon"
-        onClick={() => setToggled(toggle => !toggle)}
+        onClick={() => setToggled(!isToggled)}
         >
             <div className={`toggle-bar ${isToggled && 't-active'}`}></div>
             <div className={`toggle-bar ${isToggled && 't-active'}`}></div>

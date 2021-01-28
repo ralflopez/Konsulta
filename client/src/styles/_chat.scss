@@ -1,0 +1,35 @@
+.chat-container {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .chat-bubbles-container {
+        overflow: auto;
+        // flex: 1;
+        .chat-horizontal-container {
+            text-align: left;
+            &.me {
+                text-align: right;
+                .chat-bubble {
+                    color: $white;
+                    background-color: $primary;
+                }
+            }
+            .chat-bubble {
+                display: inline-block;
+                max-width: 50%;
+                min-width: 100px;
+                padding: 8px 16px;
+                border-radius: $border-radius-sm;
+                background-color: $secondary;
+                overflow: hidden;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+
+.chat-icon-sm {
+    width: 100px;
+    object-fit: fill;
+}

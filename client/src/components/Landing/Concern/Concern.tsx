@@ -5,13 +5,13 @@ import ConcernTxtBox from './_ConcernTxtBox';
 
 function Concern() {
     return (
-        <Container className="h-100v ">
-            <Row className="d-flex justify-content-between ox-hidden p-navbar">
+        <Container className="h-100v">
+            <Row className="ox-hidden w-100 mt-2 mt-md-4">
                 <Col xs={11} md={6} className="mx-auto">
                     <CaptionSide />
                 </Col>
                 <Col xs={11} md={6} className="mx-auto">
-                    <ConcernTxtBox />
+                    <ConcernTxtBox title="Concern"/>
                 </Col>
             </Row>
         </Container>

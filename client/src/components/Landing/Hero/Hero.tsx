@@ -7,7 +7,7 @@ function Hero() {
     return (
         <Container fluid className="hw-100v">
             <Row className="h-100 flex-column flex-md-row hero-row">
-                <Col md={6} className="hero-title-container" style={{borderTopRightRadius: '50px', borderBottomRightRadius: '50px'}}>
+                <Col md={6} className="hero-title-container br-50">
                     <HeroTitle />
                 </Col>
                 <Col md={6} className="d-flex justify-content-center align-items-center">
