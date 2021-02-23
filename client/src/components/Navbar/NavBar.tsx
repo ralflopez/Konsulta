@@ -28,7 +28,7 @@ function NavBar() {
     }
 
     return (
-        <Navbar fixed="top" expand="md" className="navbar-container">
+        <Navbar fixed="top" expand="md" className="navbar-container pr-0 pl-0">
             <Container className="pb-2 pt-2 pb-md-2 pt-md-2">
                 <Row className="w-100 mx-auto">
                     <Col xs={6} className="p-md-0">

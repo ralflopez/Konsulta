@@ -10,7 +10,7 @@ interface Props {
 
 function _Card({title, caption}: Props) {
     return (
-        <Card style={{width: '100%', maxWidth: '17rem', margin: '16px auto' }}>
+        <Card style={{width: '100%', maxWidth: '17rem'}} className="m-3 d-inline-block">
         <Card.Img variant="top" src={sample} />
             <Card.Body>
                 <Card.Title style={{textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap'}}>{title}</Card.Title>

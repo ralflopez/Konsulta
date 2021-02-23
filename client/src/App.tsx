@@ -6,15 +6,16 @@ import LandingScreen from './components/Landing/LandingScreen';
 import ChatScreen from './components/Chat/ChatScreen';
 import ListScreen from './components/List/ListScreen';
 import FacilityScreen from './components/Facility/FacilityScreen';
+import ProfileScreen from './components/Profile/ProfileScreen';
 
 function App() {
   return (
     <Router>
       <NavBar />
       <Switch>
-        <Route path="/" exact component={FacilityScreen} />
         <Route path="/" exact component={LandingScreen} />
-        <Route path="/consult" component={ChatScreen} />
+        <Route path="/consult" component={ListScreen} />
+        <Route path="/profile" component={ProfileScreen} />
       </Switch>
     </Router>
   );

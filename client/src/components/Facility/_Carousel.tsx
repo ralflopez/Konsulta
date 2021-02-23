@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 
 function _Carousel() {
     return (
-        <Carousel style={{backgroundColor: 'gold'}}>
+        <Carousel className="carousel-facility-prev pb-5">
             <Carousel.Item>
                 <img
                 className="d-block w-100"
