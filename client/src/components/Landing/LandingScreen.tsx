@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import Concern from './Concern/Concern';
 import Features from './Features/Features';
 import Hero from './Hero/Hero';
+import { fetchUser } from '../../redux/actions/userActions';
 
-function LandingScreen() {
+function LandingScreen({ fetchUser }: any) {
+
+    useEffect(() => {
+        fetchUser();
+    }, []);
+
     return (
         <>
             <Hero />
@@ -13,4 +20,8 @@ function LandingScreen() {
     );
 }
 
-export default LandingScreen;
+const mapDispatchToProps = (dispatch: any) => ({
+    fetchUser: () => dispatch(fetchUser())
+});
+
+export default connect(null, mapDispatchToProps)(LandingScreen);
