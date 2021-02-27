@@ -9,7 +9,7 @@ function LandingScreen({ fetchUser }: any) {
 
     useEffect(() => {
         fetchUser();
-    }, []);
+    }, [fetchUser]);
 
     return (
         <>

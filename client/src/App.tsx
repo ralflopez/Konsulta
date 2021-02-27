@@ -7,7 +7,6 @@ import NavBar from './components/Navbar/NavBar';
 import LandingScreen from './components/Landing/LandingScreen';
 import ChatScreen from './components/Chat/ChatScreen';
 import ListScreen from './components/List/ListScreen';
-import FacilityScreen from './components/Facility/FacilityScreen';
 import ProfileScreen from './components/Profile/ProfileScreen';
 
 function App() {

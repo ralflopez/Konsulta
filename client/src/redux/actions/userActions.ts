@@ -1,5 +1,4 @@
-import axios, { AxiosResponse, AxiosError } from 'axios';
-import { IMongoUser } from '../../types/User';
+import axios, { AxiosResponse } from 'axios';
 
 // actions
 export const SET_USER: string = 'set-user';

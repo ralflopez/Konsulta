@@ -1,4 +1,3 @@
-import { IMongoUser } from '../../types/User';
 import * as actions from '../actions/userActions';
 
 const userInit = {}

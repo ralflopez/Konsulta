@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Email from './_Email';
 import Loggedin from './_Loggedin';
 import Login from './_Login';
 import { connect } from 'react-redux';
